@@ -1,0 +1,114 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.essenttia.controller.Planeador" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout" xmlns:unified="sap.ui.unified">
+	<Page showHeader="true" title="Planeación de reuniones" showFooter="true">
+		<content>
+			<layout:VerticalLayout width="625px" visible="true">
+				<layout:content>
+					<unified:CalendarDateInterval days="14" intervalSelection="false" visible="true" width="1280px" singleSelection="true">
+						<unified:selectedDates/>
+						<unified:specialDates/>
+					</unified:CalendarDateInterval>
+				</layout:content>
+			</layout:VerticalLayout>
+			<Image src="/webapp/resources/LogoEssentia.jpg" height="89px" width="89px" visible="true" densityAware="false"/>
+			<layout:VerticalLayout width="625px" visible="true">
+				<layout:content>
+					<ObjectListItem intro="" title="Nov 23 - Nov 29" icon="" number="6 horas" numberUnit="" numberState="None" type="Active" showMarkers="false">
+						<attributes>
+							<ObjectAttribute text="" visible="true"/>
+						</attributes>
+						<firstStatus>
+							<ObjectStatus text="" state="Warning" visible="true"/>
+						</firstStatus>
+						<secondStatus>
+							<ObjectStatus text="" state="None" visible="true"/>
+						</secondStatus>
+					</ObjectListItem>
+					<ObjectListItem intro="" title="Nov 16 - Nov 22" icon="" number="10 horas" numberUnit="" numberState="None" type="Active"
+						showMarkers="false">
+						<attributes>
+							<ObjectAttribute text="" visible="true"/>
+						</attributes>
+						<firstStatus>
+							<ObjectStatus text="3 reuniones" state="Warning" visible="true"/>
+						</firstStatus>
+						<secondStatus>
+							<ObjectStatus text="" state="None" visible="true"/>
+						</secondStatus>
+					</ObjectListItem>
+					<layout:HorizontalLayout visible="true">
+						<layout:content>
+							<layout:VerticalLayout width="625px" visible="true">
+								<layout:content>
+									<ObjectListItem intro="" title="Nov 30 - Dic 6" icon="" number="3 horas" numberUnit="" numberState="None" type="Active" showMarkers="false">
+										<attributes>
+											<ObjectAttribute text="" visible="true"/>
+										</attributes>
+										<firstStatus>
+											<ObjectStatus text="1 reunión" state="Warning" visible="true"/>
+										</firstStatus>
+										<secondStatus>
+											<ObjectStatus text="" state="None" visible="true"/>
+										</secondStatus>
+									</ObjectListItem>
+									<Button text="Añadir reunión" type="Emphasized" iconFirst="true" width="126px" enabled="true" visible="true" iconDensityAware="false"
+										press="_onButtonPress"/>
+								</layout:content>
+							</layout:VerticalLayout>
+						</layout:content>
+					</layout:HorizontalLayout>
+				</layout:content>
+			</layout:VerticalLayout>
+			<Table id="sap_Responsive_Page_0-content-build_simple_Table-1472630904758" width="auto" noDataText="No data" mode="MultiSelect"
+				showSeparators="All" growing="false" growingThreshold="20" growingScrollToLoad="false" class="sapUiResponsiveMargin"
+				itemPress="_onTableItemPress" items="{path:'/ReunionSet', templateShareable:true}">
+				<infoToolbar/>
+				<headerToolbar/>
+				<columns>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Reunión" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Duración" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Estado" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation">
+						<cells>
+							<ObjectIdentifier title="{nombre}" text="{nombre}" titleActive="false" visible="true"/>
+							<Text text="{duracion}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<ObjectNumber number="{estado}" unit="" emphasized="true" state="None"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			<Image src="/webapp/resources/Legend.png" height="55px" width="978px" visible="true" densityAware="false"/>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Entrar" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress1"/>
+					<Button text="Eliminar" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress2"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

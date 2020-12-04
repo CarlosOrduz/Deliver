@@ -1,0 +1,35 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="9d89ed82a8f4b8a41475d7e0" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityContainer Name="9d89ed82a8f4b8a41475d7e0_Entities" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="TimeSheetModelSet" EntityType="9d89ed82a8f4b8a41475d7e0.TimeSheetModel" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<EntitySet Name="ReunionSet" EntityType="9d89ed82a8f4b8a41475d7e0.Reunion" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+			</EntityContainer>
+			<EntityType Name="TimeSheetModel">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="AbsenceType" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="d1"/>
+				<Property Name="ActivityType" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="d2"/>
+				<Property Name="Status" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Status"/>
+				<Property Name="Duration" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+				<Property Name="WBSElement" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="WBSElement"/>
+				<Property Name="SecondTitleFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+					sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;TimeSheetModel\&quot;,\&quot;entityId\&quot;:\&quot;TimeSheetModel\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;ActivityType\&quot;,\&quot;propertyId\&quot;:\&quot;ActivityType\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:1}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;, \&quot;,\&quot;id\&quot;:3}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;TimeSheetModel\&quot;,\&quot;entityId\&quot;:\&quot;TimeSheetModel\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;WBSElement\&quot;,\&quot;propertyId\&quot;:\&quot;WBSElement\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:4}],\&quot;id\&quot;:2}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;_id&quot;:&quot;5601c3a97abea81e5fb90795&quot;,&quot;propertyId&quot;:&quot;ActivityType&quot;,&quot;entityId&quot;:&quot;TimeSheetModel&quot;,&quot;navPropId&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;5601c3a97abea81e5fb90794&quot;,&quot;propertyId&quot;:&quot;WBSElement&quot;,&quot;entityId&quot;:&quot;TimeSheetModel&quot;,&quot;navPropId&quot;:&quot;&quot;}]}"
+					sap:label="SecondTitleFormula"/>
+			</EntityType>
+			<EntityType Name="Reunion">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="estado" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="estado"/>
+				<Property Name="nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="nombre"/>
+				<Property Name="duracion" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="duracion"/>
+			</EntityType>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

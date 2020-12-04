@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.essenttia.controller.Dialog4" xmlns="sap.m">
+	<Dialog horizontalScrolling="false" showHeader="true" state="None" stretch="false" title="Confirm Submission" type="Standard"
+		verticalScrolling="false">
+		<content>
+			<Table mode="None" width="auto" noDataText="No data" backgroundDesign="Translucent" showSeparators="None" growing="false"
+				growingThreshold="20" growingScrollToLoad="false" visible="true">
+				<items>
+					<ColumnListItem type="Inactive">
+						<cells>
+							<ObjectIdentifier title="Number of Entries:" text="" titleActive="false" visible="true"/>
+							<Text text="1" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</cells>
+					</ColumnListItem>
+					<ColumnListItem type="Inactive">
+						<cells>
+							<ObjectIdentifier title="Duration:" text="" titleActive="false" visible="true"/>
+							<Text text="8 00" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+				<headerToolbar/>
+				<columns>
+					<Column width="auto" hAlign="Right" vAlign="Top" mergeDuplicates="false" minScreenWidth="Phone" demandPopin="true" popinDisplay="Block">
+						<header/>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" mergeDuplicates="false" minScreenWidth="Phone" demandPopin="false" popinDisplay="Block">
+						<header/>
+						<footer/>
+					</Column>
+				</columns>
+			</Table>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+			<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onButtonPress1"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,34 @@
+{
+	"dataBinding": {
+		"/webapp/view/Planeador.view.xml": {
+			"entitySet": "/ReunionSet"
+		},
+		"/webapp/view/CrearReunion.view.xml": {
+			"entitySet": "/TimeSheetModelSet"
+		},
+		"/webapp/view/EditarReunion.view.xml": {
+			"entitySet": "/ReunionSet"
+		},
+		"/webapp/view/Dialog6.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Dialog5.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Popover1.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Dialog4.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/D1_1464183522622.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/D0_1464182097909.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/D2_1464263798339.view.xml": {
+			"entitySet": ""
+		}
+	}
+}

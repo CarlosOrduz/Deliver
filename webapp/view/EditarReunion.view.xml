@@ -1,0 +1,151 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.essenttia.controller.EditarReunion" xmlns="sap.m"
+	xmlns:unified="sap.ui.unified" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Page showHeader="true" title="Editar reunión" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+		<content>
+			<unified:CalendarDateInterval days="14" intervalSelection="false" visible="true" width="100%" singleSelection="true">
+				<unified:selectedDates/>
+				<unified:specialDates/>
+			</unified:CalendarDateInterval>
+			<VBox alignItems="Center" direction="Column" fitContainer="false" width="100%" justifyContent="Start" renderType="Div" visible="true"
+				displayInline="false">
+				<items>
+					<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="70%" justifyContent="Start" renderType="Div" visible="true"
+						displayInline="false">
+						<items>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="Detalles de la reunión" level="Auto"/>
+								</form:title>
+								<form:formContainers>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="Seleccione el grupo de empleados" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"
+														visible="true"/>
+												</form:label>
+												<form:fields>
+													<ComboBox selectedKey="Umbrella Corp" placeholder="" editable="true" enabled="true" visible="true" width="auto" valueState="None"
+														maxWidth="100%">
+														<items>
+															<core:Item text="Grupo 1 TI" enabled="true" key="Grupo 1 TI"/>
+															<core:Item text="Grupo 2 TI" enabled="true" key="Grupo 2 TI"/>
+															<core:Item text="Grupo 3 TI" enabled="true" key="Grupo 3 TI"/>
+														</items>
+													</ComboBox>
+												</form:fields>
+											</form:FormElement>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="Duración" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</form:label>
+												<form:fields>
+													<Input value="08:00" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false"
+														valueStateText="Invalid entry" maxLength="0"/>
+												</form:fields>
+											</form:FormElement>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="Notas" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</form:label>
+												<form:fields>
+													<TextArea rows="2" cols="20" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+								</form:formContainers>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="Detalles adicionales" level="Auto"/>
+								</form:title>
+								<form:formContainers>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="Tipo de reunión" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</form:label>
+												<form:fields>
+													<ComboBox selectedKey="Development" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+														<items>
+															<core:Item text="Desarrollo" enabled="true" key="Desarrollo"/>
+															<core:Item text="Administración de proyectos" enabled="true" key="Administración de proyectos"/>
+															<core:Item text="Aprendizaje" enabled="true" key="Aprendizaje"/>
+														</items>
+													</ComboBox>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+								</form:formContainers>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="Asistentes" level="Auto"/>
+								</form:title>
+								<form:formContainers/>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+							<Label text="" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<List mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true"
+								growingThreshold="20" growingScrollToLoad="true" visible="true">
+								<infoToolbar>
+									<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+										<content>
+											<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</content>
+									</Toolbar>
+								</infoToolbar>
+								<headerToolbar>
+									<Toolbar enabled="true" visible="true" width="" design="Solid">
+										<content>
+											<SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<items>
+									<StandardListItem icon="sap-icon://person-placeholder" title="Jorge Barrera" description="jorge.barrera@esenttia.com - 3176842598"
+										info="Grupo 2 TI" infoState="None" type="Active" selected="false" visible="true"/>
+									<StandardListItem icon="sap-icon://person-placeholder" title="Julian Amezquita" description="julian.amezquita@esenttia.com - 3125894735"
+										info="Grupo 2 TI" infoState="None" type="Active" selected="false" visible="true"/>
+									<StandardListItem icon="sap-icon://message-error" title="Armando Mendoza" description="armando.mendoza@esenttia.com - 31535485256"
+										info="Grupo 2 TI" infoState="None" type="Active" selected="false" visible="true"/>
+								</items>
+							</List>
+						</items>
+						<layoutData/>
+					</VBox>
+					<Button text="Aprobar reunión" type="Accept" iconFirst="true" width="125.98958587646484px" enabled="true" visible="true"
+						iconDensityAware="false" press="_onButtonPress"/>
+					<Button text="Rechazar reunión" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress1"/>
+				</items>
+				<layoutData/>
+			</VBox>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Cancelar" type="Back" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress2"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

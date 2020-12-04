@@ -1,0 +1,31 @@
+[{
+	"ID": "1",
+	"estado": "En revisión",
+	"nombre": "Alineación",
+	"duracion": "3 horas"
+}, {
+	"ID": "2",
+	"estado": "Aceptada",
+	"nombre": "Capacitación",
+	"duracion": "1 hora"
+}, {
+	"ID": "3",
+	"estado": "Rechazada",
+	"nombre": "Revisión",
+	"duracion": "2 horas"
+}, {
+	"ID": "4",
+	"estado": "En revisión",
+	"nombre": "Soporte de operaciones",
+	"duracion": "6 horas"
+}, {
+	"ID": "5",
+	"estado": "Aceptada",
+	"nombre": "Segunda alineación",
+	"duracion": "3 horas"
+}, {
+	"ID": "6",
+	"estado": "En revisión",
+	"nombre": "Integración",
+	"duracion": "3 horas"
+}]

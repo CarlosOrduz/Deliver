@@ -1,0 +1,17 @@
+[{
+	"ID": "1",
+	"AbsenceType": "Attendance Hours",
+	"ActivityType": "Repair Hours",
+	"Status": "Sent for Approval",
+	"Duration": "08:00",
+	"WBSElement": "SOFTWARE",
+	"SecondTitleFormula": ""
+}, {
+	"ID": "2",
+	"AbsenceType": "Attendance Hours",
+	"ActivityType": "Hardware Design",
+	"Status": "Approved",
+	"Duration": "03:00",
+	"WBSElement": "HARDWARE",
+	"SecondTitleFormula": ""
+}]

@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.essenttia.controller.D2_1464263798339"
+	xmlns="sap.m">
+	<Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" type="Standard" verticalScrolling="true">
+		<content/>
+		<beginButton/>
+		<buttons/>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>
