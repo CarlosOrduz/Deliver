@@ -118,7 +118,7 @@
 					"controlAggregation": "pages",
 					"viewName": "EditarReunion",
 					"viewId": "EditarReunion",
-					"viewLevel": 1,
+					"viewLevel": 1, 
 					"transition": "slide"
 				}
 			},
