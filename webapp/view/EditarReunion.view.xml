@@ -117,11 +117,11 @@
 								</headerToolbar>
 								<items>
 									<StandardListItem icon="sap-icon://person-placeholder" title="Jorge Barrera" description="jorge.barrera@esenttia.com - 3176842598"
-										info="Grupo 2 TI" infoState="None" type="Active" selected="false" visible="true"/>
+										info="Coordinador reunion" infoState="None" type="Active" selected="false" visible="true"/>
 									<StandardListItem icon="sap-icon://person-placeholder" title="Julian Amezquita" description="julian.amezquita@esenttia.com - 3125894735"
-										info="Grupo 2 TI" infoState="None" type="Active" selected="false" visible="true"/>
+										info="Representante Ventas" infoState="None" type="Active" selected="false" visible="true"/>
 									<StandardListItem icon="sap-icon://message-error" title="Armando Mendoza" description="armando.mendoza@esenttia.com - 31535485256"
-										info="Grupo 2 TI" infoState="None" type="Active" selected="false" visible="true"/>
+										info="Representante TI" infoState="None" type="Active" selected="false" visible="true"/>
 								</items>
 							</List>
 						</items>
