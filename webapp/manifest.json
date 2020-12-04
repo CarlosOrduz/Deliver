@@ -101,7 +101,7 @@
 			},
 			"targets": {
 				"Planeador": {
-					"controlAggregation": "pages",
+					"controlAggregation": "pages", 
 					"viewName": "Planeador",
 					"viewId": "Planeador",
 					"viewLevel": 1,
