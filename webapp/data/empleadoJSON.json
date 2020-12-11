@@ -1,0 +1,100 @@
+{
+	"EmployeeCollection": [
+		{
+			"IdEmpleado": "HE-1000",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Juan Camilo Perdomo",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1001",
+			"Rol": "Representate Ventas",
+			"RolPrincipal": "Ventas",
+			"Nombre": "Jualian Amezquita",
+			"Area": "Ventas a Cliente",
+			"Locacion": "Medellin"
+		},
+		{
+			"IdEmpleado": "HE-1002",
+			"Rol": "Coordinador",
+			"RolPrincipal": "Coordinador de Gerencia de Resultados",
+			"Nombre": "Jorge Barrera",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1003",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Armando Mendoza",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1004",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Juan Fernando Cardenaz",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1005",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Emilio Santofimio",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1006",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Carlos Orduz",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1007",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Felipe Romero",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1008",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Ana Carolina Garcia",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1009",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Ricardo Sarmiento",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1010",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Lizeth Mendoza",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		},
+		{
+			"IdEmpleado": "HE-1011",
+			"Rol": "Impacto Financiero",
+			"RolPrincipal": "Finanzas",
+			"Nombre": "Andrea Fernanda Castillo",
+			"Area": "Resultados y Gerencia",
+			"Locacion": "Bogota"
+		}
+	]
+}

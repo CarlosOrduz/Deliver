@@ -1,5 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.essenttia.controller.Planeador" xmlns="sap.m"
-	xmlns:layout="sap.ui.layout" xmlns:unified="sap.ui.unified">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:unified="sap.ui.unified" controllerName="com.sap.build.standard.essenttia.controller.Planeador">
 	<Page showHeader="true" title="Planeación de reuniones" showFooter="true">
 		<content>
 			<layout:VerticalLayout width="625px" visible="true">
@@ -10,10 +9,10 @@
 					</unified:CalendarDateInterval>
 				</layout:content>
 			</layout:VerticalLayout>
-			<Image src="/webapp/resources/LogoEssentia.jpg" height="89px" width="89px" visible="true" densityAware="false"/>
+			<Image xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="/webapp/resources/LogoEssentia.jpg" height="89px" width="89px" visible="true" densityAware="false" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'DetallesReunion'\}\}\}"/>
 			<layout:VerticalLayout width="625px" visible="true">
 				<layout:content>
-					<ObjectListItem intro="" title="Nov 23 - Nov 29" icon="" number="6 horas" numberUnit="" numberState="None" type="Active" showMarkers="false">
+					<ObjectListItem intro="" title="Dic 10 - Dic 15" icon="" number="6 horas" numberUnit="" numberState="None" type="Active" showMarkers="false">
 						<attributes>
 							<ObjectAttribute text="" visible="true"/>
 						</attributes>
@@ -24,8 +23,7 @@
 							<ObjectStatus text="" state="None" visible="true"/>
 						</secondStatus>
 					</ObjectListItem>
-					<ObjectListItem intro="" title="Nov 16 - Nov 22" icon="" number="10 horas" numberUnit="" numberState="None" type="Active"
-						showMarkers="false">
+					<ObjectListItem intro="" title="Dic 16 - Dic 22" icon="" number="10 horas" numberUnit="" numberState="None" type="Active" showMarkers="false">
 						<attributes>
 							<ObjectAttribute text="" visible="true"/>
 						</attributes>
@@ -40,7 +38,7 @@
 						<layout:content>
 							<layout:VerticalLayout width="625px" visible="true">
 								<layout:content>
-									<ObjectListItem intro="" title="Nov 30 - Dic 6" icon="" number="3 horas" numberUnit="" numberState="None" type="Active" showMarkers="false">
+									<ObjectListItem intro="" title="Dic 26 - Dic 31" icon="" number="3 horas" numberUnit="" numberState="None" type="Active" showMarkers="false">
 										<attributes>
 											<ObjectAttribute text="" visible="true"/>
 										</attributes>
@@ -50,18 +48,15 @@
 										<secondStatus>
 											<ObjectStatus text="" state="None" visible="true"/>
 										</secondStatus>
-									</ObjectListItem>
-									<Button text="Añadir reunión" type="Emphasized" iconFirst="true" width="126px" enabled="true" visible="true" iconDensityAware="false"
-										press="_onButtonPress"/>
+									</ObjectListItem><Button text="Añadir reunión" type="Emphasized" iconFirst="true" width="126px" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+									<Button text="Nuevo Boton" type="Emphasized" iconFirst="true" width="126px" enabled="true" visible="true" iconDensityAware="false" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'DetallesReunion'\}\}\}"/>
 								</layout:content>
 							</layout:VerticalLayout>
 						</layout:content>
 					</layout:HorizontalLayout>
 				</layout:content>
 			</layout:VerticalLayout>
-			<Table id="sap_Responsive_Page_0-content-build_simple_Table-1472630904758" width="auto" noDataText="No data" mode="MultiSelect"
-				showSeparators="All" growing="false" growingThreshold="20" growingScrollToLoad="false" class="sapUiResponsiveMargin"
-				itemPress="_onTableItemPress" items="{path:'/ReunionSet', templateShareable:true}">
+			<Table id="sap_Responsive_Page_0-content-build_simple_Table-1472630904758" width="auto" noDataText="No data" mode="MultiSelect" showSeparators="All" growing="false" growingThreshold="20" growingScrollToLoad="false" class="sapUiResponsiveMargin" itemPress="_onTableItemPress" items="{path:'/ReunionSet', templateShareable:true}">
 				<infoToolbar/>
 				<headerToolbar/>
 				<columns>
@@ -100,10 +95,8 @@
 			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
 				<content>
 					<ToolbarSpacer width=""/>
-					<Button text="Entrar" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
-						press="_onButtonPress1"/>
-					<Button text="Eliminar" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
-						press="_onButtonPress2"/>
+					<Button text="Entrar" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+					<Button text="Eliminar" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress2"/>
 				</content>
 			</OverflowToolbar>
 		</footer>

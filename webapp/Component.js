@@ -69,7 +69,18 @@ sap.ui.define([
 			var entityNavigations = navigationWithContext[sEntityNameSet];
 			return entityNavigations == null ? null : entityNavigations[targetPageName];
 		}
+		
+		
 
 	});
+	
+	var Component = UIComponent.extend("sap.m.sample.PlanningCalendarWithStickyHeader.Component", {
+
+		metadata : {
+			manifest: "json"
+		}
+	});
+
+	return Component;
 
 });

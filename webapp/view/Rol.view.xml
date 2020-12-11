@@ -1,0 +1,52 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.essenttia.controller.Suggestion" xmlns="sap.m"
+	xmlns:unified="sap.ui.unified" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+<Label text="MultiInput with suggestion table" labelFor="multiInput2" class="sapUiSmallMarginTop"/>
+			<MultiInput  class="sapUiSmallMarginBottom"
+				id="multiInput2"
+				width="100%"
+				placeholder="Enter Product ..."
+				showSuggestion="true"
+				showValueHelp="false"
+				valueState="Information"
+				valueStateText="Information message. Extra long text used as a information message. Extra long text used as a information message - 2. Extra long text used as a information message - 3."
+				suggestionRows="{/ProductCollection}">
+				<suggestionColumns>
+					<Column
+						hAlign="Begin"
+						popinDisplay="Inline"
+						demandPopin="true">
+						<Label text="Nombre"/>
+					</Column>
+					<Column
+						hAlign="Center"
+						popinDisplay="Inline"
+						demandPopin="true"
+						minScreenWidth="Tablet">
+						<Label text="IdEmpleado"/>
+					</Column>
+					<Column
+						hAlign="Center"
+						popinDisplay="Inline"
+						demandPopin="false"
+						minScreenWidth="Tablet">
+						<Label text="Rol"/>
+					</Column>
+					<Column
+						hAlign="End"
+						popinDisplay="Inline"
+						demandPopin="true">
+						<Label text="Area"/>
+					</Column>
+				</suggestionColumns>
+				<suggestionRows>
+					<ColumnListItem>
+					<cells>
+						<Label text="{Nombre}"/>
+						<Label text="{IdEmpleado}"/>
+						<Label text="{Rol}"/>
+						<Label text="{Area}"/>
+					</cells>
+					</ColumnListItem>
+				</suggestionRows>
+			</MultiInput>
+</mvc:View>

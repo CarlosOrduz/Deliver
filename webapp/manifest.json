@@ -55,7 +55,10 @@
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
-				"sap.ui.layout": {}
+				"sap.ui.layout": {},
+				"sap.ui.unified": {
+					"minVersion": ""
+				}
 			}
 		},
 		"contentDensities": {
@@ -94,14 +97,13 @@
 				"clearTarget": false,
 				"controlAggregation": "pages",
 				"bypassed": {
-					"target": [
-						"Planeador"
-					]
-				},"async" : true
+					"target": ["Planeador"]
+				},
+				"async": true
 			},
 			"targets": {
 				"Planeador": {
-					"controlAggregation": "pages", 
+					"controlAggregation": "pages",
 					"viewName": "Planeador",
 					"viewId": "Planeador",
 					"viewLevel": 1,
@@ -118,34 +120,34 @@
 					"controlAggregation": "pages",
 					"viewName": "EditarReunion",
 					"viewId": "EditarReunion",
-					"viewLevel": 1, 
+					"viewLevel": 1,
 					"transition": "slide"
+				},
+				"DetallesReunion": {
+					"viewType": "XML",
+					"viewName": "DetallesReunion"
 				}
 			},
 			"routes": [{
 				"pattern": "Planeador/:context:",
 				"name": "Planeador",
-				"target": [
-					"Planeador"
-				]
+				"target": ["Planeador"]
 			}, {
 				"pattern": "",
 				"name": "default",
-				"target": [
-					"Planeador"
-				]
+				"target": ["Planeador"]
 			}, {
 				"pattern": "CrearReunion/:context:",
 				"name": "CrearReunion",
-				"target": [
-					"CrearReunion"
-				]
+				"target": ["CrearReunion"]
 			}, {
 				"pattern": "EditarReunion/:context:",
 				"name": "EditarReunion",
-				"target": [
-					"EditarReunion"
-				]
+				"target": ["EditarReunion"]
+			}, {
+				"name": "DetallesReunion",
+				"pattern": "DetallesReunion",
+				"target": ["DetallesReunion"]
 			}]
 		}
 	}
